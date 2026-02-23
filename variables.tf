@@ -1,6 +1,7 @@
 variable "subscription_id" {
+  type = string;
   description = "Azure subscription ID (from 'az account show' -> id)"
-  type        = string
+  sensitive  = true
 }
 
 variable "location" {
